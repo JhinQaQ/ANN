@@ -21,8 +21,12 @@ A lightweight web-based chat interface for language models using the MLC-AI/Web-
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/sLM.git
+   git clone https://github.com/JhinQaQ/ANN.git
    cd sLM
+2. Run this project
+   ```bash
+   npm install
+   npm start
 
 ### Additional Steps for Windows Users
 

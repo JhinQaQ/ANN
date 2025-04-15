@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sLM - Simple Language Model Chat</title>
+  <link href="/llm_chat.7b5c630a.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="slm-container">
+    <header class="slm-header">
+      <div class="slm-logo">
+        <h1>sLM</h1>
+        <span class="slm-tagline">Simple Language Model</span>
+      </div>
+      <div class="slm-model-selector">
+        <select id="chatui-select" class="slm-select"></select>
+      </div>
+    </header>
+
+    <main class="slm-main">
+      <div class="slm-chat-container">
+        <div class="slm-chat" id="chatui-chat"></div>
+      </div>
+
+      <div class="slm-input-area">
+        <textarea id="chatui-input" class="slm-input" placeholder="Ask sLM something..." rows="1"></textarea>
+        <div class="slm-buttons">
+          <button id="chatui-send-btn" class="slm-btn slm-send-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <button id="chatui-reset-btn" class="slm-btn slm-reset-btn">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="slm-footer">
+      <div class="slm-status">
+        <span id="chatui-info-label" class="slm-info-label"></span>
+      </div>
+    </footer>
+  </div>
+
+  <!--- Place script after ui to make sure ui loads first -->
+  <script src="/llm_chat.5e8e8dcb.js" defer=""></script>
+</body>
+</html>

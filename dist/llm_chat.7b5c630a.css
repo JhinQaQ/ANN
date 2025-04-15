@@ -1,0 +1,222 @@
+:root {
+  --primary-color: #4a6fa5;
+  --secondary-color: #166088;
+  --accent-color: #47b5ff;
+  --background-color: #f8f9fa;
+  --chat-bg: #fff;
+  --user-msg-bg: #e9f5ff;
+  --bot-msg-bg: #f0f2f5;
+  --text-color: #333;
+  --light-text: #666;
+  --border-color: #e1e4e8;
+  --shadow-color: #0000001a;
+  --font-main: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --transition-speed: .3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.slm-container {
+  flex-direction: column;
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+}
+
+.slm-header {
+  border-bottom: 1px solid var(--border-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  display: flex;
+}
+
+.slm-logo {
+  align-items: baseline;
+  display: flex;
+}
+
+.slm-logo h1 {
+  color: var(--primary-color);
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+
+.slm-tagline {
+  color: var(--light-text);
+  font-size: .9rem;
+}
+
+.slm-model-selector {
+  min-width: 200px;
+}
+
+.slm-select {
+  border: 1px solid var(--border-color);
+  width: 100%;
+  transition: border-color var(--transition-speed);
+  background-color: #fff;
+  border-radius: 4px;
+  outline: none;
+  padding: .5rem;
+  font-size: .9rem;
+}
+
+.slm-select:focus {
+  border-color: var(--accent-color);
+}
+
+.slm-main {
+  flex-direction: column;
+  flex: 1;
+  margin: 1rem 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.slm-chat-container {
+  background-color: var(--chat-bg);
+  box-shadow: 0 2px 10px var(--shadow-color);
+  border-radius: 8px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.slm-chat {
+  height: 100%;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.message {
+  border-radius: 8px;
+  max-width: 80%;
+  margin-bottom: 1rem;
+  padding: .8rem 1rem;
+  animation: .3s ease-in-out fadeIn;
+}
+
+.user-message {
+  background-color: var(--user-msg-bg);
+  border-bottom-right-radius: 0;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: var(--bot-msg-bg);
+  border-bottom-left-radius: 0;
+  margin-right: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slm-input-area {
+  box-shadow: 0 2px 10px var(--shadow-color);
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.slm-input {
+  resize: none;
+  font-family: var(--font-main);
+  border: none;
+  outline: none;
+  flex: 1;
+  max-height: 150px;
+  padding: 1rem;
+  font-size: 1rem;
+  overflow-y: auto;
+}
+
+.slm-buttons {
+  align-items: center;
+  padding-right: .5rem;
+  display: flex;
+}
+
+.slm-btn {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: background-color var(--transition-speed);
+  background: none;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-left: .5rem;
+  padding: .5rem;
+  display: flex;
+}
+
+.slm-send-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.slm-send-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.slm-reset-btn {
+  color: var(--light-text);
+}
+
+.slm-reset-btn:hover {
+  color: #ff6b6b;
+  background-color: #f0f0f0;
+}
+
+.slm-footer {
+  border-top: 1px solid var(--border-color);
+  color: var(--light-text);
+  padding: 1rem 0;
+  font-size: .9rem;
+}
+
+.slm-info-label {
+  font-style: italic;
+}
+
+@media (width <= 768px) {
+  .slm-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slm-model-selector {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .message {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=llm_chat.7b5c630a.css.map */

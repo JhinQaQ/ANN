@@ -14,7 +14,7 @@ A lightweight web-based chat interface for language models using the MLC-AI/Web-
 
 ### Prerequisites
 
-- Node.js (v14 or later)
+- Node.js (v20 or later)
 - npm or yarn
 
 ### Installation

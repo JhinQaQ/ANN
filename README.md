@@ -1,6 +1,6 @@
 # sLM - Simple Language Model Chat
 
-A lightweight web-based chat interface for language models using the MLC-AI/Web-LLM framework.
+A lightweight web-based inference for LLMs using the MLC-AI/Web-LLM framework.
 
 ## Features
 

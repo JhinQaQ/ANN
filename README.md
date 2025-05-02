@@ -53,3 +53,11 @@ A lightweight web-based inference for LLMs using the MLC-AI/Web-LLM framework.
 
 3. **Run the Application**:
    - Save your changes and run `npm start` in CMD or PowerShell to start the application.
+  
+## License and Attribution
+
+This project is part of my final academic project and is intended for educational and research purposes.
+
+Inspired by the work of [MLC-AI](https://github.com/mlc-ai) and the [WebLLM](https://github.com/mlc-ai/web-llm) project.
+
+© Jin, 2025. All rights reserved.
